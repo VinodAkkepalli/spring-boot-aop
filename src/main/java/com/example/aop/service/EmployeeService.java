@@ -20,4 +20,13 @@ public class EmployeeService {
 	public void deleteEmployee(String empId) {
 		
 	}
+	
+	public void exceptionThrowingEmployee() {
+		System.out.println("inside exceptionThrowingEmployee()");
+		throw new RuntimeException();
+	}
+	
+	public void workEmployee() {
+		System.out.println("I am working!!");
+	}
 }

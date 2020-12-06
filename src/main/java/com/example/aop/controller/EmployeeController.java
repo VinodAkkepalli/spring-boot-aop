@@ -31,5 +31,21 @@ public class EmployeeController {
 
 		return "Employee removed";
 	}
+	
+	@RequestMapping(value = "/throw/employee", method = RequestMethod.GET)
+	public String exceptionThrowingEmployee() {
+
+		employeeService.exceptionThrowingEmployee();
+
+		return "Employee thows exception";
+	}
+	
+	@RequestMapping(value = "/work/employee", method = RequestMethod.GET)
+	public String workEmployee() {
+
+		employeeService.workEmployee();
+
+		return "Employee working!!";
+	}
 
 }
